@@ -1,0 +1,264 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\classesList}[4]{
+        \item\small{
+                {#1 #2 #3 #4 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{\large#1} & \textbf{\small #2} \\
+            \textit{\large#3} & \textit{\small #4} \\
+
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textit{\small#1} & \textit{\small #2} \\
+        \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+        \item
+        \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+            \small#1 & \textbf{\small #2}\\
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+        {\Huge \scshape Jacob Malloy} \\ \vspace{1pt}
+        Knoxville,TN \\ \vspace{1pt}
+        \small \href{tel:+16154541182}{ \raisebox{-0.1\height}\faPhone\ \underline{(615)454-1182} ~} \href{mailto:jmalloy1@vols.utk.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{jmalloy1@vols.utk.edu}} ~
+        \href{https://www.linkedin.com/in/jacob-malloy-b5b5ba190/}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{jacob-malloy-b5b5ba190}}  ~
+        \href{https://github.com/jacobmalloy}{\raisebox{-0.2\height}\faGithub\ \underline{JacobMalloy}} ~
+        \href{https://gitlab.com/jmalloy1}{\raisebox{-0.2\height}\faGitlab\ \underline{Jmalloy1}} ~
+        \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {The University of Tennessee}{08 2020 -- 05 2023}
+            {B.S. in Computer Science - \textbf{3.99}}{Knoxville, Tennessee}
+        \resumeSubheading
+            {Franklin High School}{08 2016 -- 05 2020}
+            {Summa Cum Laude}{Franklin, Tennessee}
+    \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{COURSEWORK / SKILLS}
+        %\resumeSubHeadingListStart
+                \begin{multicols}{5}
+                        \begin{itemize}[itemsep=-2pt, parsep=4pt]
+                                \item C/C++
+                                \item Python
+                                \item eBPF
+                                \item JavaScript
+                                \item Bash
+                                \item VS Code
+                                \item GDB
+                                \item Valgrind
+                                \item Linux
+                                \item Git
+                        \end{itemize}
+                \end{multicols}
+                \vspace*{2.0\multicolsep}
+        %\resumeSubHeadingListEnd
+
+
+
+\section{PROFESSIONAL EXPERIENCE}
+    \resumeSubHeadingListStart
+
+        \resumeSubheading
+            {\href{http://web.eecs.utk.edu/~mrjantz/corsys.html}{CORSys Research Lab}}{06 2021 -- Current}
+            {\underline{Undergraduate Research Assistant}}{Knoxville, Tennessee}
+            \resumeItemListStart
+            \resumeItem{\normalsize{Work on optimizing the memory usage by analyzing different Garbage Collectors usage patterns.}}
+                \resumeItem{\normalsize{Research non uniform memory architectures with the ZGC garbage collector in OpenJDK's HotSpot JVM.}}
+                \resumeItem{\normalsize{Port internal kernel change modifying the cgroup system from kernel version 5.7.2 to 5.14.}}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {\href{https://www.codeninjas.com/tn-franklin}{Code Ninjas Franklin}}{10 2018 -- 07 2020}
+            {\underline{Lead Sensei}}{Franklin, Tennessee}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Provided a safe and fun learning environment for kids ages 7-14 to develop programming and STEM skills.}}
+                \resumeItem{\normalsize{Led multiple summer camps fostering a positive environment to learn things such as scratch, JavaScript, and educational STEM skills.}}
+
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+\section{TEACHING EXPERIENCE}
+    \resumeSubHeadingListStart
+                \resumeSubheading
+                    {First Lego League Robotics Team}{08 2019 -- 12 2019}
+                    {\underline{Co-Coach}}{Franklin, Tennessee}
+                    \resumeItemListStart
+                    \resumeItem{\normalsize{Founded a FIRST LEGO League robotics team that won the robot portion of the Nashville competition.}}
+                        \resumeItem{\normalsize{Led a team of students ages 9-13 to work as a team building a robot and creating an innovation project.}}
+                        \resumeItem{\normalsize{Fostered an environment that was conducive to team work and learning engineering skills.}}
+                    \resumeItemListEnd
+
+        \resumeSubHeadingListEnd
+ \vspace{-11pt}
+
+\section{Extracurricular Involvement}
+ \resumeSubHeadingListStart
+        \resumeSubheading{Franklin High School Robotics Club }{05 2018 -- 05 2020}{\underline{Lead Programmer}}{Franklin, Tennessee}
+                        \resumeItemListStart
+                                \resumeItem{\normalsize{Managed multiple other club members using Git as a version control.}}
+                                \resumeItem{\normalsize{Taught and led younger members of the robotics team to program the competition robot.}}
+                                \resumeItem{\normalsize{Contributed to developing the Java software for two Robot competitions.}}
+ \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-11pt}
+
+
+ \section{VOLUNTEER EXPERIENCE}
+    \resumeSubHeadingListStart
+
+        \resumeSubheading
+            {Brenthaven Cumberland Presbyterian Church}{07 2015 -- 07 2020}
+            {\underline{Youth Member}}{Brentwood, Tennessee}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Participated in several mission trips including wildfire cleanup in the Smokey Mountains.}}
+                \resumeItem{\normalsize{Engaged in over 100 hours of community service through church organized missions.}}
+                \resumeItem{\normalsize{Member of the team providing sound engineering and live streaming services.}}
+
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Loudon Cumberland Presbyterian Church}{08 2021 - Current}
+            {\underline{Volunteer}}{Loudon, Tennessee}
+            \resumeItemListStart
+                \resumeItem{\normalsize{Participate on the audio visual team running sound, screens and the camera system.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+\end{document}
