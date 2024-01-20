@@ -154,10 +154,13 @@
 \section{EDUCATION}
     \resumeSubHeadingListStart
         \resumeSubheading
+            {The University of Tennessee}{08 2023 -- Current}
+            {Ph.D. Computer Science - \textbf{4.00}}{Knoxville, Tennessee}
+        \resumeSubheading
             {The University of Tennessee}{08 2020 -- 05 2023}
-            {Bachelors of Science in Computer Science - \textbf{3.99}}{Knoxville, Tennessee}
+            {Bachelors of Science in Computer Science}{Knoxville, Tennessee}
     \resumeSubHeadingListEnd
-
+\begin{comment}
 %------RELEVANT COURSEWORK-------
 \section{COURSEWORK / SKILLS}
         %\resumeSubHeadingListStart
@@ -177,7 +180,7 @@
                 \end{multicols}
                 \vspace*{2.0\multicolsep}
         %\resumeSubHeadingListEnd
-
+\end{comment}
 
 
 \section{PROFESSIONAL EXPERIENCE}
@@ -190,27 +193,28 @@
                 \resumeItem{\normalsize{Work on optimizing the memory usage by analyzing different Garbage Collectors usage patterns.}}
                 \resumeItem{\normalsize{Research non uniform memory architectures with the ZGC garbage collector in OpenJDK's HotSpot JVM.}}
                 \resumeItem{\normalsize{Port internal kernel change modifying the cgroup system from kernel version 5.7.2 to 5.14.}}
-                \resumeItem{\normalsize{Maintain servers to keep a secure working environment so that there are no stops in research.}}
             \resumeItemListEnd
 
-        \resumeSubheading
-            {\href{https://www.codeninjas.com/tn-franklin}{Code Ninjas Franklin}}{10 2018 -- 07 2020}
-            {\underline{Lead Sensei}}{Franklin, Tennessee}
-            \resumeItemListStart
-                \resumeItem{\normalsize{Provided a safe and fun learning environment for kids ages 7-14 to develop programming and STEM skills.}}
-                \resumeItem{\normalsize{Led multiple summer camps fostering a positive environment to learn things such as scratch, JavaScript, and educational STEM skills.}}
 
-            \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-12pt}
 
 \section{TEACHING EXPERIENCE}
     \resumeSubHeadingListStart
                 \resumeSubheading
+                    {The University of Tennessee Knoxville}{08 2023 - Current}
+                    {\underline{Teaching Assistant}}{Knoxville, Tennessee}
+                    \resumeItemListStart
+                        \resumeItem{\normalsize{TA Compilers and Runtime Systems, Systems Programming, and Advanced Algorithms courses.}}
+                        \resumeItem{\normalsize{Provide office hours in order to extend students understanding of the course material.}}
+                        \resumeItem{\normalsize{Grade the written and programming assignments for students providing actionable feedback.}}
+                    \resumeItemListEnd
+
+                \resumeSubheading
                     {First Lego League Robotics Team}{08 2019 -- 12 2019}
                     {\underline{Co-Coach}}{Franklin, Tennessee}
                     \resumeItemListStart
-                    \resumeItem{\normalsize{Founded a FIRST LEGO League robotics team that won the robot portion of the Nashville competition.}}
+                        \resumeItem{\normalsize{Founded a FIRST LEGO League robotics team that won the robot portion of the Nashville competition.}}
                         \resumeItem{\normalsize{Led a team of students ages 9-13 to work as a team building a robot and creating an innovation project.}}
                         \resumeItem{\normalsize{Fostered an environment that was conducive to team work and learning engineering skills.}}
                     \resumeItemListEnd
@@ -218,21 +222,22 @@
         \resumeSubHeadingListEnd
  \vspace{-11pt}
 
- \section{PROJECTS}
+ \section{Relevant Course Work}
     \resumeSubHeadingListStart
-                \resumeProjectHeading
-                    {History By You}{01 2023 -- 05 2023}
-
+                \resumeProjectHeading {LLVM}{}
                     \resumeItemListStart
-                        \resumeItem{\normalsize{Worked collaboratively with peers to complete project to allow users to share history collaboratively on a map.}}
-                        \resumeItem{\normalsize{Wrote the backend for the website using PHP while using MySQL as the database service.}}
-                        \resumeItem{\normalsize{Developed portions of the front end JavaScript which displays a map, and relays the information from the backend.}}
+                        \resumeItem{\normalsize{Wrote a compiler frontend for the LLVM compiler in a simplified C-like language using Lex and Yacc.}}
+                        \resumeItem{\normalsize{Wrote a optimization for the LLVM compiler eliminating duplicate loads using iterative forward dataflow analysis.}}
                     \resumeItemListEnd
-                \resumeProjectHeading
-                    {SIG}{07 2023 -- Current}
-
+                \resumeProjectHeading {Simulators}{}
                     \resumeItemListStart
-                        \resumeItem{\normalsize{Work on developing a light weight terminal written in C using OpenGL to accelerate rendering.}}
+                        \resumeItem{\normalsize{Simulate a multi-level cache with multiple replacement policies using stores and loads collected using Perf.}}
+                        \resumeItem{\normalsize{Simulate Tomasulo's algorithm with different buffer depths to understand IPC effects with different processor parameters.}}
+                    \resumeItemListEnd
+                \resumeProjectHeading {Cybersecurity}{}
+                    \resumeItemListStart
+                        \resumeItem{\normalsize{Implemented a simple VPN using the TUN interface. Password and TLS are used to secure the VPN.}}
+                        \resumeItem{\normalsize{Use the FIPS specification in order to implement an AES and SHA-1 implementation from scratch.}}
                     \resumeItemListEnd
 
         \resumeSubHeadingListEnd
