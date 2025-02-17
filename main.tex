@@ -1,10 +1,3 @@
-%-------------------------
-% Resume in Latex
-% Author : Abey George
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
@@ -95,6 +88,12 @@
     }
 }
 
+\newcommand{\resumeItemBold}[2]{
+    \item\small{
+        {\textbf{#1} #2 \vspace{-2pt}}
+    }
+}
+
 \newcommand{\classesList}[4]{
         \item\small{
                 {#1 #2 #3 #4 \vspace{-2pt}}
@@ -106,6 +105,14 @@
         \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
             \textbf{\large#1} & \textbf{\small #2} \\
             \textit{\large#3} & \textit{\small #4} \\
+
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSingleLine}[2]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{\large#1} & \textbf{\small #2} \\
 
         \end{tabular*}\vspace{-7pt}
 }
@@ -162,35 +169,15 @@
     \resumeSubHeadingListStart
         \resumeSubheading
             {The University of Tennessee}{08 2023 -- Current}
-            {Ph.D. in Computer Science - \textbf{4.0}}{Knoxville, Tennessee}
+            {Ph.D. in Computer Science - \textbf{3.94}}{Knoxville, Tennessee}
         \resumeSubheading
             {The University of Tennessee}{08 2020 -- 05 2023}
             {Bachelors of Science in Computer Science}{Knoxville, Tennessee}
     \resumeSubHeadingListEnd
 
-%------RELEVANT COURSEWORK-------
-\section{COURSEWORK / SKILLS}
-        %\resumeSubHeadingListStart
-                \begin{multicols}{5}
-                        \begin{itemize}[itemsep=-2pt, parsep=4pt]
-                                \item C/C++
-                                \item Python
-                                \item eBPF
-                                \item JavaScript
-                                \item Bash
-                                \item VS Code
-                                \item GDB
-                                \item Valgrind
-                                \item Linux
-                                \item Git
-                        \end{itemize}
-                \end{multicols}
-                \vspace*{2.0\multicolsep}
-        %\resumeSubHeadingListEnd
 
 
-
-\section{PROFESSIONAL EXPERIENCE}
+\section{RESEARCH EXPERIENCE}
     \resumeSubHeadingListStart
 
         \resumeSubheading
@@ -203,83 +190,58 @@
                 \resumeItem{\normalsize{Maintain servers to keep a secure working environment so that there are no stops in research.}}
             \resumeItemListEnd
 
-        \resumeSubheading
-            {\href{https://www.codeninjas.com/tn-franklin}{Code Ninjas Franklin}}{10 2018 -- 07 2020}
-            {\underline{Lead Sensei}}{Franklin, Tennessee}
-            \resumeItemListStart
-                \resumeItem{\normalsize{Provided a safe and fun learning environment for kids ages 7-14 to develop programming and STEM skills.}}
-                \resumeItem{\normalsize{Led multiple summer camps fostering a positive environment to learn things such as scratch, JavaScript, and educational STEM skills.}}
 
-            \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-12pt}
 
 \section{TEACHING EXPERIENCE}
     \resumeSubHeadingListStart
                 \resumeSubheading
-                    {First Lego League Robotics Team}{08 2019 -- 12 2019}
-                    {\underline{Co-Coach}}{Franklin, Tennessee}
+                    {University of Tennessee EECS}{08 2023 -- Current}
+                    {\underline{TA}}{Knoxville, Tennessee}
                     \resumeItemListStart
-                    \resumeItem{\normalsize{Founded a FIRST LEGO League robotics team that won the robot portion of the Nashville competition.}}
-                        \resumeItem{\normalsize{Led a team of students ages 9-13 to work as a team building a robot and creating an innovation project.}}
-                        \resumeItem{\normalsize{Fostered an environment that was conducive to team work and learning engineering skills.}}
+                        \resumeItem{\normalsize{Assisted in teaching Graduate Compilers, Advanced Algorithms, and Undergraduate Software Systems.}}
+                        \resumeItem{\normalsize{Graded programming assignments and projects, providing detailed feedback to help students improve their code quality and problem-solving skills.}}
+                        \resumeItem{\normalsize{Led lab sessions, delivering instructional material, demonstrating key programming techniques, and guiding students through hands-on exercises.}}
+                        \resumeItem{\normalsize{Held office hours and responded to student inquiries, clarifying course material and debugging issues to enhance learning outcomes.}}
                     \resumeItemListEnd
 
         \resumeSubHeadingListEnd
  \vspace{-11pt}
 
- \section{PROJECTS}
+\section{COURSEWORK}
     \resumeSubHeadingListStart
-                \resumeProjectHeading
-                    {History By You}{01 2023 -- 05 2023}
-
+                
+                \resumeSubheadingSingleLine{Systems}{}
                     \resumeItemListStart
-                        \resumeItem{\normalsize{Worked collaboratively with peers to complete project to allow users to share history collaboratively on a map.}}
-                        \resumeItem{\normalsize{Wrote the backend for the website using PHP while using MySQL as the database service.}}
-                        \resumeItem{\normalsize{Developed portions of the front end JavaScript which displays a map, and relays the information from the backend.}}
+                      \resumeItemBold{Introductory Systems}{Covered memory management, process scheduling, file systems, and concurrency.}
+                      \resumeItemBold{Hardware Architecture}{Studied introductory assembly, combinatorial logic, virtual memory, and IEE-754 floating point.}
+                      \resumeItemBold{Graduate Hardware Architecture}{Explored the memory hierarchy, cache architecture, branch prediction, and Tomasulo's algorithm.}
+                      \resumeItemBold{Compilers}{Implement a compiler frontend using LLVM, LEX and YACC and implement copy propogation LLVM compiler pass.}
+                      \resumeItemBold{Paper Reading}{Explored topics on the cutting edge of operatings systems, language virtual machines, and compilers.}
                     \resumeItemListEnd
-                \resumeProjectHeading
-                    {SIG}{07 2023 -- Current}
-
+                \resumeSubheadingSingleLine{Machine Learning}{}
                     \resumeItemListStart
-                        \resumeItem{\normalsize{Work on developing a light weight terminal written in C using OpenGL to accelerate rendering.}}
+                        \resumeItemBold{Machine Learning}{Studied regression, classification, clustering, and dimensionality reduction, with a focus on theoretical foundations and implementation.}
+                        %\resumeItemBold{Deep Learning}{Explored neural network architectures, optimization techniques, and applications in image and text processing.}
                     \resumeItemListEnd
-
+                \resumeSubheadingSingleLine{Security}{}
+                    \resumeItemListStart
+                        \resumeItemBold{Introduction to Cybersecurity}{Covered fundamental security principles, attack vectors, and common vulnerabilities.}
+                        \resumeItemBold{Network Security}{Learned about security implications at each level of the network stack, as well as in depth learning of the TLS stack by implementing a custom VPN using TLS over the TUN interface.}
+                        \resumeItemBold{Applied Cryptography}{Focused on encryption algorithms, key exchange mechanisms, and the block chain.}
+                        \resumeItemBold{Human Factors in Cybersecurity}{Investigated usability, phishing detection, and security awareness training.}
+                    \resumeItemListEnd
+                \resumeSubheadingSingleLine{Other Graduate Coursework}{}
+                    \resumeItemListStart
+                        \resumeItemBold{Advanced Algorithms}{Learned about advanced algorithms such as A-Star, Bloom Filters, and B-Tree's. Presented on the Paxos Algorithm.}
+                        \resumeItemBold{Algorithm Analysis}{Studied algorithmic complexity of different asymptotics as well as algorithms such as the Simplex Algorithm.}
+                        \resumeItemBold{Foundations of Computer Science}{Covered formal languages, automata theory, computability, and tractability.}
+                        \resumeItemBold{Graph Theory}{Covered advanced topics in graph theory such as coloring, graph topology, and the Robertson-Seymour Graph Minor Theorem.}
+                        \resumeItemBold{Graphics}{Implemented graphics rendering techniques using webgl and GLSL shaders.}
+                    \resumeItemListEnd
         \resumeSubHeadingListEnd
  \vspace{-11pt}
 
-\section{Extracurricular Involvement}
-    \resumeSubHeadingListStart
-        \resumeSubheading{Franklin High School Robotics Club }{05 2018 -- 05 2020}{\underline{Lead Programmer}}{Franklin, Tennessee}
-        \resumeItemListStart
-            \resumeItem{\normalsize{Managed multiple other club members using Git as a version control.}}
-            \resumeItem{\normalsize{Taught and led younger members of the robotics team to program the competition robot.}}
-            \resumeItem{\normalsize{Contributed to developing the Java software for two Robot competitions.}}
-        \resumeItemListEnd
-    \resumeSubHeadingListEnd
-\vspace{-11pt}
-
-
- \section{VOLUNTEER EXPERIENCE}
-    \resumeSubHeadingListStart
-
-        \resumeSubheading
-            {Brenthaven Cumberland Presbyterian Church}{07 2015 -- 07 2020}
-            {\underline{Youth Member}}{Brentwood, Tennessee}
-            \resumeItemListStart
-                \resumeItem{\normalsize{Participated in several mission trips including wildfire cleanup in the Smokey Mountains.}}
-                \resumeItem{\normalsize{Engaged in over 100 hours of community service through church organized missions.}}
-                \resumeItem{\normalsize{Member of the team providing sound engineering and live streaming services.}}
-
-            \resumeItemListEnd
-
-        \resumeSubheading
-            {Loudon Cumberland Presbyterian Church}{08 2021 - Current}
-            {\underline{Volunteer}}{Loudon, Tennessee}
-            \resumeItemListStart
-                \resumeItem{\normalsize{Participate on the audio visual team running sound, screens and the camera system.}}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
-\vspace{-12pt}
 
 \end{document}
