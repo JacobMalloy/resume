@@ -154,13 +154,13 @@
 %----------HEADING----------
 
 \begin{center}
-        {\Huge \scshape Jacob Malloy} \\ \vspace{1pt}
-        Knoxville,TN \\ \vspace{1pt}
-        \small \href{tel:+16154541182}{ \raisebox{-0.1\height}\faPhone\ \underline{(615)454-1182} ~} \href{mailto:jmalloy1@vols.utk.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{jmalloy1@vols.utk.edu}} ~
-        \href{https://www.linkedin.com/in/jacob-malloy-b5b5ba190/}{\raisebox{-0.2\height}\faLinkedin\ \underline{jacob-malloy-b5b5ba190}}  ~
-        \href{https://github.com/jacobmalloy}{\raisebox{-0.2\height}\faGithub\ \underline{JacobMalloy}} ~
-        \href{https://gitlab.com/jmalloy1}{\raisebox{-0.2\height}\faGitlab\ \underline{Jmalloy1}} ~
-        \vspace{-8pt}
+	{\Huge \scshape Jacob Malloy} \\ \vspace{1pt}
+	Knoxville,TN \\ \vspace{1pt}
+	\small \href{tel:+16154541182}{ \raisebox{-0.1\height}\faPhone\ \underline{(615)454-1182} ~} \href{mailto:jmalloy1@vols.utk.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{jmalloy1@vols.utk.edu}} ~
+	\href{https://www.linkedin.com/in/jacob-malloy-b5b5ba190/}{\raisebox{-0.2\height}\faLinkedin\ \underline{jacob-malloy-b5b5ba190}}  ~
+	\href{https://github.com/jacobmalloy}{\raisebox{-0.2\height}\faGithub\ \underline{JacobMalloy}} ~
+	\href{https://gitlab.com/jmalloy1}{\raisebox{-0.2\height}\faGitlab\ \underline{Jmalloy1}} ~
+	\vspace{-8pt}
 \end{center}
 
 \section{PROFESSIONAL SUMMARY}
@@ -168,82 +168,91 @@ Ph.D. candidate in Computer Science at the University of Tennessee with a strong
 
 %-----------EDUCATION-----------
 \section{EDUCATION}
-    \resumeSubHeadingListStart
-        \resumeSubheading
-            {The University of Tennessee}{08 2023 -- Present}
-            {Ph.D. in Computer Science - \textbf{3.94/4.00}}{Knoxville, Tennessee}
-        \resumeSubheading
-            {The University of Tennessee}{08 2020 -- 05 2023}
-            {Bachelor of Science in Computer Science}{Knoxville, Tennessee}
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{The University of Tennessee}{08 2023 -- Present}
+{Ph.D. in Computer Science - \textbf{3.94/4.00}}{Knoxville, Tennessee}
+\resumeSubheading
+{The University of Tennessee}{08 2020 -- 05 2023}
+{Bachelor of Science in Computer Science}{Knoxville, Tennessee}
+\resumeSubHeadingListEnd
 
 
 
 \section{RESEARCH EXPERIENCE}
-    \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-        \resumeSubheading
-            {\href{http://web.eecs.utk.edu/~mrjantz/corsys.html}{CORSys Research Lab}}{06 2021 -- Present}
-            {\underline{Research Assistant - Prof. Michael Jantz}}{Knoxville, Tennessee}
-            \resumeItemListStart
-                \resumeItem{\normalsize{Work on optimizing the memory usage by analyzing different Garbage Collectors usage patterns.}}
-                \resumeItem{\normalsize{Research non uniform memory architectures with the ZGC garbage collector in OpenJDK's HotSpot JVM.}}
-                \resumeItem{\normalsize{Port internal kernel change modifying the cgroup system from kernel version 5.7.2 to 5.14.}}
-                \resumeItem{\normalsize{Maintain servers to keep a secure working environment so that there are no stops in research.}}
-            \resumeItemListEnd
+\resumeSubheading
+{\href{http://web.eecs.utk.edu/~mrjantz/corsys.html}{CORSys Research Lab}}{06 2021 -- Present}
+{\underline{Research Assistant - Prof. Michael Jantz}}{Knoxville, Tennessee}
+\resumeItemListStart
+\begin{comment}
+\resumeItem{\normalsize{Work on optimizing the memory usage by analyzing different Garbage Collectors usage patterns.}}
+\resumeItem{\normalsize{Research non uniform memory architectures with the ZGC garbage collector in OpenJDK's HotSpot JVM.}}
+\resumeItem{\normalsize{Port internal kernel change modifying the cgroup system from kernel version 5.7.2 to 5.14.}}
+\resumeItem{\normalsize{Maintain servers to keep a secure working environment so that there are no stops in research.}}
+\end{comment}
+\resumeItem{\normalsize{Optimized ZGC for NUMA systems by relocating hot/cold objects between DRAM and PMM.}}
+\resumeItem{\normalsize{Ported kernel modifications (NUMA CGroup control, userspace-managed zswap) from 5.7.2 to 5.14.}}
+\resumeItem{\normalsize{Developed a system for GC-managed apps to proactively reduce memory via swap signals.}}
+\resumeItem{\normalsize{Implemented a JVM patch to trigger GC memory reduction and analyzed performance trade-offs.}}
+\resumeItem{\normalsize{Profiling ZGC to quantify concurrent collection costs and improve space-performance tradeoffs.}}
+
+\resumeItemListEnd
 
 
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
 \vspace{-12pt}
 
 \section{TEACHING EXPERIENCE}
-    \resumeSubHeadingListStart
-                \resumeSubheading
-                    {University of Tennessee EECS}{08 2023 -- Present}
-                    {\underline{Teaching Assistant}}{Knoxville, Tennessee}
-                    \resumeItemListStart
-                        \resumeItem{\normalsize{Assisted in teaching Compilers, Advanced Algorithms, and Software Systems for over \textbf{400} students.}}
-                        \resumeItem{\normalsize{Graded programming assignments and projects, providing detailed feedback to help students improve their code quality and problem-solving skills.}}
-                        \resumeItem{\normalsize{Led lab sessions, delivering instructional material, demonstrating key programming techniques, and guiding students through hands-on exercises.}}
-                        \resumeItem{\normalsize{Held office hours and responded to student inquiries, clarifying course material and debugging issues to enhance learning outcomes.}}
-                    \resumeItemListEnd
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Tennessee EECS}{08 2023 -- Present}
+{\underline{Teaching Assistant}}{Knoxville, Tennessee}
+\resumeItemListStart
+\resumeItem{\normalsize{Assisted in teaching Compilers, Advanced Algorithms, and Software Systems for over \textbf{400} students.}}
+\resumeItem{\normalsize{Assisted in modifying lab on copy propagation LLVM pass and created an honors lab exploring different threadpool designs.}}
+\resumeItem{\normalsize{Graded programming assignments and projects, providing detailed feedback to help students improve their code quality and problem-solving skills.}}
+\resumeItem{\normalsize{Led lab sessions, delivering instructional material, demonstrating key programming techniques, and guiding students through hands-on exercises.}}
+\resumeItem{\normalsize{Held office hours and responded to student inquiries, clarifying course material and debugging issues to enhance learning outcomes.}}
+\resumeItemListEnd
 
-        \resumeSubHeadingListEnd
- \vspace{-11pt}
+\resumeSubHeadingListEnd
+\vspace{-11pt}
 
 \section{COURSEWORK}
-    \resumeSubHeadingListStart
-                
-                \resumeSubheadingSingleLine{Systems}{}
-                    \resumeItemListStart
-                      \resumeItemBold{Introductory Systems}{Covered memory management, process scheduling, file systems, and concurrency.}
-                      \resumeItemBold{Hardware Architecture}{Studied introductory assembly, combinatorial logic, virtual memory, and IEE-754 floating point.}
-                      \resumeItemBold{Graduate Hardware Architecture}{Explored the memory hierarchy, cache architecture, branch prediction, and Tomasulo's algorithm.}
-                      \resumeItemBold{Compilers}{Implemented a compiler frontend using \textbf{LLVM}, LEX and YACC and implement \textbf{copy propagation} LLVM compiler pass.}
-                      \resumeItemBold{Paper Reading}{Explored topics on the cutting edge of operatings systems, language virtual machines, and compilers.}
-                    \resumeItemListEnd
-                \resumeSubheadingSingleLine{Machine Learning}{}
-                    \resumeItemListStart
-                        \resumeItemBold{Machine Learning}{Studied regression, classification, clustering, and dimensionality reduction, with a focus on theoretical foundations and implementation.}
-                        %\resumeItemBold{Deep Learning}{Explored neural network architectures, optimization techniques, and applications in image and text processing.}
-                    \resumeItemListEnd
-                \resumeSubheadingSingleLine{Security}{}
-                    \resumeItemListStart
-                        \resumeItemBold{Introduction to Cybersecurity}{Covered fundamental security principles, attack vectors, and common vulnerabilities.}
-                        \resumeItemBold{Network Security}{Learned about security implications at each level of the network stack, as well as in depth learning of the TLS stack by implementing a custom \textbf{VPN} using \textbf{TLS} over the TUN interface.}
-                        \resumeItemBold{Applied Cryptography}{Focused on encryption algorithms, key exchange mechanisms, and the block chain.}
-                        \resumeItemBold{Human Factors in Cybersecurity}{Investigated usability, phishing detection, and security awareness training.}
-                    \resumeItemListEnd
-                \resumeSubheadingSingleLine{Other Graduate Coursework}{}
-                    \resumeItemListStart
-                        \resumeItemBold{Advanced Algorithms}{Learned about advanced algorithms such as A*, Bloom Filters, and B-Trees. Presented on the Paxos Algorithm.}
-                        \resumeItemBold{Algorithm Analysis}{Studied algorithmic complexity of different asymptotics and algorithms such as the Simplex Algorithm.}
-                        \resumeItemBold{Foundations of Computer Science}{Covered formal languages, automata theory, computability, and tractability.}
-                        \resumeItemBold{Graph Theory}{Covered advanced topics in graph theory such as coloring, graph topology, and the Robertson-Seymour Graph Minor Theorem.}
-                        \resumeItemBold{Graphics}{Implemented graphics rendering techniques using webgl and GLSL shaders.}
-                    \resumeItemListEnd
-        \resumeSubHeadingListEnd
- \vspace{-11pt}
+\resumeSubHeadingListStart
+
+\resumeSubheadingSingleLine{Systems}{}
+\resumeItemListStart
+\resumeItemBold{Introductory Systems}{Covered memory management, process scheduling, file systems, and concurrency.}
+\resumeItemBold{Hardware Architecture}{Studied introductory assembly, combinatorial logic, virtual memory, and IEE-754 floating point.}
+\resumeItemBold{Graduate Hardware Architecture}{Explored the memory hierarchy, cache architecture, branch prediction, and Tomasulo's algorithm.}
+\resumeItemBold{Compilers}{Implemented a compiler frontend using \textbf{LLVM}, LEX and YACC and implement \textbf{copy propagation} LLVM compiler pass.}
+\resumeItemBold{Paper Reading}{Explored topics on the cutting edge of operatings systems, language virtual machines, and compilers.}
+\resumeItemListEnd
+\resumeSubheadingSingleLine{Machine Learning}{}
+\resumeItemListStart
+\resumeItemBold{Machine Learning}{Studied regression, classification, clustering, and dimensionality reduction, with a focus on theoretical foundations and implementation.}
+%\resumeItemBold{Deep Learning}{Explored neural network architectures, optimization techniques, and applications in image and text processing.}
+\resumeItemListEnd
+\resumeSubheadingSingleLine{Security}{}
+\resumeItemListStart
+\resumeItemBold{Introduction to Cybersecurity}{Covered fundamental security principles, attack vectors, and common vulnerabilities.}
+\resumeItemBold{Network Security}{Learned about security implications at each level of the network stack, as well as in depth learning of the TLS stack by implementing a custom \textbf{VPN} using \textbf{TLS} over the TUN interface.}
+\resumeItemBold{Applied Cryptography}{Focused on encryption algorithms, key exchange mechanisms, and the block chain.}
+\resumeItemBold{Human Factors in Cybersecurity}{Used \textbf{QLoRA to fine-tune LLaMA}, removing safety measures to assess its viability for interactive phishing and required expertise.}
+\resumeItemListEnd
+\resumeSubheadingSingleLine{Other Graduate Coursework}{}
+\resumeItemListStart
+\resumeItemBold{Advanced Algorithms}{Learned about advanced algorithms such as A*, Bloom Filters, and B-Trees. Presented on the Paxos Algorithm.}
+\resumeItemBold{Algorithm Analysis}{Studied algorithmic complexity of different asymptotics and algorithms such as the Simplex Algorithm.}
+\resumeItemBold{Foundations of Computer Science}{Covered formal languages, automata theory, computability, and tractability.}
+\resumeItemBold{Graph Theory}{Covered advanced topics in graph theory such as coloring, graph topology, and the Robertson-Seymour Graph Minor Theorem.}
+\resumeItemBold{Graphics}{Implemented graphics rendering techniques using webgl and GLSL shaders.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-11pt}
 
 
 \end{document}
