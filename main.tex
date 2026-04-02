@@ -1,4 +1,4 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,6pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -134,6 +134,10 @@
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
+\newcommand{\resumeCourseworkHeading}[1]{
+    \vspace{2pt}\item \textbf{\small #1}\vspace{-5pt}
+}
+
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
@@ -160,11 +164,22 @@
 	\href{https://www.linkedin.com/in/jacob-malloy-b5b5ba190/}{\raisebox{-0.2\height}\faLinkedin\ \underline{jacob-malloy-b5b5ba190}}  ~
 	\href{https://github.com/jacobmalloy}{\raisebox{-0.2\height}\faGithub\ \underline{JacobMalloy}} ~
 	\href{https://gitlab.com/jmalloy1}{\raisebox{-0.2\height}\faGitlab\ \underline{Jmalloy1}} ~
+	\href{https://orcid.org/0009-0000-3410-7752}{\raisebox{-0.2\height}\faOrcid\ \underline{0009-0000-3410-7752}} ~
 	\vspace{-8pt}
 \end{center}
 
 \section{PROFESSIONAL SUMMARY}
-Ph.D. candidate in Computer Science at the University of Tennessee with a strong foundation in systems, machine learning, and security. Experienced researcher in optimizing memory management and non-uniform memory architectures within OpenJDK’s HotSpot JVM. Passionate about low-level systems, compilers, and performance analysis, with hands-on experience in kernel modifications and high-performance computing. Dedicated educator with teaching experience in compilers, algorithms, and software systems, providing mentorship and technical instruction. Skilled in C, C++, Rust, Python, and a range of systems and security technologies.
+Ph.D. candidate in Computer Science at the University of Tennessee specializing in JVM internals, memory management, and high-performance computing. Current research focuses on leveraging Intel Cache Allocation Technology (CAT) to dynamically partition LLC ways between GC and application threads in Java, and on data tiering across DDR and persistent memory using OpenJDK’s ZGC. Published as second author on VMem (ACM, 2025). Dedicated educator with five semesters of TA experience across compilers, systems programming, and algorithms. Skilled in C, C++, Java, and low-level systems development including kernel modifications and JVM patching.
+
+%-----------PUBLICATIONS-----------
+\section{PUBLICATIONS}
+\resumeSubHeadingListStart
+\resumeSubheadingSingleLine{VMem: Enabling Application Management of Physical Memory Resources}{2025}
+\resumeItemListStart
+\resumeItem{\normalsize{Second author. ACM. DOI: \href{https://doi.org/10.1145/3767110.3767116}{10.1145/3767110.3767116}. Presents a system enabling managed-runtime applications to proactively control physical memory consumption in response to OS-level signals.}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-12pt}
 
 %-----------EDUCATION-----------
 \section{EDUCATION}
@@ -172,6 +187,9 @@ Ph.D. candidate in Computer Science at the University of Tennessee with a strong
 \resumeSubheading
 {The University of Tennessee}{08 2023 -- Present}
 {Ph.D. in Computer Science - \textbf{3.94/4.00}}{Knoxville, Tennessee}
+\resumeSubheading
+{The University of Tennessee}{08 2023 -- 12 2025}
+{Master of Science in Computer Science (concurrent) - \textbf{3.94/4.00}}{Knoxville, Tennessee}
 \resumeSubheading
 {The University of Tennessee}{08 2020 -- 05 2023}
 {Bachelor of Science in Computer Science}{Knoxville, Tennessee}
@@ -192,11 +210,10 @@ Ph.D. candidate in Computer Science at the University of Tennessee with a strong
 \resumeItem{\normalsize{Port internal kernel change modifying the cgroup system from kernel version 5.7.2 to 5.14.}}
 \resumeItem{\normalsize{Maintain servers to keep a secure working environment so that there are no stops in research.}}
 \end{comment}
-\resumeItem{\normalsize{Optimized ZGC for NUMA systems by relocating hot/cold objects between DRAM and PMM.}}
+\resumeItem{\normalsize{Investigating Intel Cache Allocation Technology (CAT) to dynamically partition LLC cache ways between GC and application threads in the JVM, reducing GC-induced cache pressure on application performance.}}
+\resumeItem{\normalsize{Developing a data tiering system for ZGC that classifies object hotness and migrates objects between DDR and persistent memory (PMem) to improve memory capacity and cost efficiency.}}
 \resumeItem{\normalsize{Ported kernel modifications (NUMA CGroup control, userspace-managed zswap) from 5.7.2 to 5.14.}}
-\resumeItem{\normalsize{Developed a system for GC-managed apps to proactively reduce memory via swap signals.}}
 \resumeItem{\normalsize{Implemented a JVM patch to trigger GC memory reduction and analyzed performance trade-offs.}}
-\resumeItem{\normalsize{Profiling ZGC to quantify concurrent collection costs and improve space-performance tradeoffs.}}
 
 \resumeItemListEnd
 
@@ -207,52 +224,50 @@ Ph.D. candidate in Computer Science at the University of Tennessee with a strong
 \section{TEACHING EXPERIENCE}
 \resumeSubHeadingListStart
 \resumeSubheading
-{University of Tennessee EECS}{08 2023 -- Present}
+{University of Tennessee EECS}{08 2023 -- 12 2025}
 {\underline{Teaching Assistant}}{Knoxville, Tennessee}
 \resumeItemListStart
-\resumeItem{\normalsize{Assisted in teaching Compilers, Advanced Algorithms, and Software Systems for over \textbf{400} students.}}
-\resumeItem{\normalsize{Assisted in modifying lab on copy propagation LLVM pass and created an honors lab exploring different threadpool designs.}}
-\resumeItem{\normalsize{Graded programming assignments and projects, providing detailed feedback to help students improve their code quality and problem-solving skills.}}
-\resumeItem{\normalsize{Led lab sessions, delivering instructional material, demonstrating key programming techniques, and guiding students through hands-on exercises.}}
-\resumeItem{\normalsize{Held office hours and responded to student inquiries, clarifying course material and debugging issues to enhance learning outcomes.}}
+\resumeItem{\normalsize{TA'd Systems Programming (\textbf{3x}), Compilers (\textbf{2x}), and Advanced Algorithms (\textbf{1x}) over \textbf{5} semesters, supporting over \textbf{400} students.}}
+\resumeItem{\normalsize{Developed honors programming assignments including benchmarking custom thread pools with varied queue designs, and refactoring compiler projects from lex/yacc to hand-coded scanners and recursive-descent parsers.}}
 \resumeItemListEnd
 
+\resumeSubHeadingListEnd
+\vspace{-11pt}
+
+\section{SKILLS}
+\resumeSubHeadingListStart
+\resumeItemBold{Languages:}{C, C++, Java, Python, Rust}
+\resumeItemBold{JVM / Runtime:}{OpenJDK HotSpot, ZGC, G1GC, JVM internals, JVM patching}
+\resumeItemBold{Systems:}{Linux kernel development, Intel CAT (RDT), NUMA, persistent memory (PMem/Optane), cgroups, perf/eBPF}
+\resumeItemBold{Tools:}{LLVM, Git, GDB, Valgrind, CMake, \LaTeX}
 \resumeSubHeadingListEnd
 \vspace{-11pt}
 
 \section{COURSEWORK}
 \resumeSubHeadingListStart
 
-\resumeSubheadingSingleLine{Systems}{}
+\resumeCourseworkHeading{Systems}
 \resumeItemListStart
-\resumeItemBold{Introductory Systems}{Covered memory management, process scheduling, file systems, and concurrency.}
-\resumeItemBold{Hardware Architecture}{Studied introductory assembly, combinatorial logic, virtual memory, and IEE-754 floating point.}
 \resumeItemBold{Graduate Hardware Architecture}{Explored the memory hierarchy, cache architecture, branch prediction, and Tomasulo's algorithm.}
-\resumeItemBold{Compilers}{Implemented a compiler frontend using \textbf{LLVM}, LEX and YACC and implement \textbf{copy propagation} LLVM compiler pass.}
-\resumeItemBold{Paper Reading}{Explored topics on the cutting edge of operatings systems, language virtual machines, and compilers.}
+\resumeItemBold{Compilers}{Implemented a compiler frontend using \textbf{LLVM} and a \textbf{copy propagation} compiler pass.}
+\resumeItemBold{Paper Reading}{Explored cutting-edge research in operating systems, language virtual machines, and compilers.}
 \resumeItemListEnd
-\resumeSubheadingSingleLine{Machine Learning}{}
+
+\resumeCourseworkHeading{Other Graduate Coursework}
 \resumeItemListStart
-\resumeItemBold{Machine Learning}{Studied regression, classification, clustering, and dimensionality reduction, with a focus on theoretical foundations and implementation.}
-%\resumeItemBold{Deep Learning}{Explored neural network architectures, optimization techniques, and applications in image and text processing.}
-\resumeItemListEnd
-\resumeSubheadingSingleLine{Security}{}
-\resumeItemListStart
-\resumeItemBold{Introduction to Cybersecurity}{Covered fundamental security principles, attack vectors, and common vulnerabilities.}
-\resumeItemBold{Network Security}{Learned about security implications at each level of the network stack, as well as in depth learning of the TLS stack by implementing a custom \textbf{VPN} using \textbf{TLS} over the TUN interface.}
-\resumeItemBold{Applied Cryptography}{Focused on encryption algorithms, key exchange mechanisms, and the block chain.}
-\resumeItemBold{Human Factors in Cybersecurity}{Used \textbf{QLoRA to fine-tune LLaMA}, removing safety measures to assess its viability for interactive phishing and required expertise.}
-\resumeItemListEnd
-\resumeSubheadingSingleLine{Other Graduate Coursework}{}
-\resumeItemListStart
-\resumeItemBold{Advanced Algorithms}{Learned about advanced algorithms such as A*, Bloom Filters, and B-Trees. Presented on the Paxos Algorithm.}
-\resumeItemBold{Algorithm Analysis}{Studied algorithmic complexity of different asymptotics and algorithms such as the Simplex Algorithm.}
+\resumeItemBold{Advanced Algorithms}{Covered A*, Bloom Filters, B-Trees, and distributed consensus; presented on the Paxos algorithm.}
+\resumeItemBold{Algorithm Analysis}{Studied algorithmic complexity and advanced algorithms including the Simplex method.}
 \resumeItemBold{Foundations of Computer Science}{Covered formal languages, automata theory, computability, and tractability.}
-\resumeItemBold{Graph Theory}{Covered advanced topics in graph theory such as coloring, graph topology, and the Robertson-Seymour Graph Minor Theorem.}
-\resumeItemBold{Graphics}{Implemented graphics rendering techniques using webgl and GLSL shaders.}
+\resumeItemBold{Graph Theory}{Covered graph coloring, topology, and the Robertson-Seymour Graph Minor Theorem.}
 \resumeItemListEnd
+
 \resumeSubHeadingListEnd
 \vspace{-11pt}
-
+\begin{comment}
+\section{OTHER}
+\resumeItemListStart
+\resumeItemBold{Google FooBar}{Completed Google Foobar in December 2022.}
+\resumeItemListEnd
+\end{comment}
 
 \end{document}

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-latexmk main.tex
+latexmk -pdf main.tex
