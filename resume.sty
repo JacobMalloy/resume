@@ -1,0 +1,94 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{resume}
+
+% Resume-specific column spacing
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+% Resume color scheme
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Section heading style
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+        {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeItemBold}[2]{
+    \item\small{
+        {\textbf{#1} #2 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\classesList}[4]{
+        \item\small{
+                {#1 #2 #3 #4 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{\large#1} & \textbf{\small #2} \\
+            \textit{\large#3} & \textit{\small #4} \\
+
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingSingleLine}[2]{
+    \vspace{-2pt}\item
+        \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{\large#1} & \textbf{\small #2} \\
+
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textit{\small#1} & \textit{\small #2} \\
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+        \item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+            \textbf{\large#1} & \textbf{\small #2}\\
+        \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\resumeCourseworkHeading}[1]{
+    \vspace{2pt}\item \textbf{\small #1}\vspace{-5pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
